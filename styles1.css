@@ -1,0 +1,214 @@
+body, h1, h2, h3, p, ul, li {
+        background: url('adrien-olichon-RCAhiGJsUUE-unsplash.jpg') ;
+        background-size: cover;
+        -webkit-animation: slidein 30s;
+        animation: slidein 30s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Source Sans Pro'; 
+        flex-direction: column;
+
+}
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    }
+    
+    @keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    
+    }
+h3, h4, h5{
+    text-align: center;
+    color: aliceblue;
+    font-family: fantasy;
+    font-size: 70px;
+
+}
+.p1{
+  font-size: 15px;
+}
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.buttons {
+    margin: 5%;
+    text-align: center;
+    align-self: center;
+}
+
+.button {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-animation: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.button {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+/* CSS */
+
+/*.typing-text1{
+    overflow:hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end) infinite;
+    font-size: 70px;
+}*/
+/*.card {
+    position:absolute;
+    z-index: 4;
+    align-self: left;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin: -150px;
+    align-items: center;
+    float: left;
+    padding-top: 200px;
+    perspective: 500px;
+    padding-bottom: 50px;
+   
+  }
+
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .content {
+    transform: rotatex( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  
+  .front{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background:url(https://unsplash.com/photos/a-plane-flying-over-a-mountain-range-at-sunset-VoT98D0xMxs);
+    line-height: 300px;
+    color: #03446A;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  .back {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background:url(https://unsplash.com/photos/a-plane-flying-over-a-mountain-range-at-sunset-VoT98D0xMxs);
+    line-height: 300px;
+    color: #03446A;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    background: #03446A;
+    color: white;
+    transform: rotatex( 180deg );
+  }
+  .card {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}*/
+/*@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+*/
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end) infinite;
+    font-size: 70px;
+    height: 100vh;
+    width: 150vh;
+    
+}
+.typing-text p{
+    margin: 0;
+  font-size: 80px;
+  color: rgba(225,225,225, .01);
+  background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+  background-repeat: repeat;
+  -webkit-background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+p{
+    color: aliceblue;
+}
+@keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}

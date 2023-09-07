@@ -1,0 +1,236 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*font-family: Arial, sans-serif;
+    background-color:#00FFFF;
+    background-image:url('adrien-olichon-RCAhiGJsUUE-unsplash.jpg') ;   
+    background-attachment: fixed;
+    background-blend-mode:hue;*/
+    background: url('pexels-rafael-cerqueira-4737484.jpg') ;
+    background-size:cover;
+        -webkit-animation: slidein 50s;
+        animation: slidein 50s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+    
+    /*background-attachment: fixed;*/
+    display: flex;
+    height: 500px;
+    font-family: 'Source Sans Pro'; 
+    flex-direction: column;
+}
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    }
+    
+    @keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    
+    }
+header {
+    background-color:  rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 20px 0;
+   
+}
+.profile-image {
+    width: 400px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    
+}
+.image-frame {
+    border: 2px solid #ccc; /* Add a border around the frame */
+    padding: 10px; /* Add padding inside the frame */
+    display: inline-block; /* Ensure the frame wraps around the image */
+    border-radius: 10px; /* Add rounded corners to the frame */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    float: right;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    font-size: 30px;
+}
+
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color:  rgba(0, 0, 0, 0);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: none;
+    transition: transform 10s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #555;
+    transform: translateY(50px);
+}
+/*.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #c9c1c1;
+    box-shadow: 0 2px 4px rgba(31, 24, 24, 0.1);
+    border-radius: 5px;
+    
+}*/
+
+
+.contact-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.contact-list li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #060606;
+    color: #fff;
+    padding: 10px 0;
+
+}
+
+.container
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 2em;
+   
+}
+
+.about{
+    width: 900px;
+    height: 270px;
+    background-color: rgba(92, 91, 91, 0.5);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    padding-left: 50px;    
+    font-size: 30px;
+    font-family: Uni Sans;
+}
+
+
+p{
+    font-size: 25px;
+    color: aliceblue;
+}
+h2, h1, h3{
+    color: aliceblue;
+}
+.about:hover{
+    transform: scale(1.1);
+}
+.Education{
+    width: 900px;
+    height: 200px;
+    background-color: rgba(92, 91, 91, 0.5);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    padding-left: 50px; 
+    font-size: 25px;
+    font-family: serif;
+
+}
+.Education:hover{ transform: scale(1.1);}
+.skills{
+    width: 900px;
+    height: 80px;
+    background-color: rgba(92, 91, 91, 0.5);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    padding-left: 50px; 
+    font-size: 25px;
+    font-family: serif;
+}
+.skills:hover{
+    transform: scale(1.1);
+}
+
+.projects{
+    width: 900px;
+    height: 600px;
+    background-color: rgba(92, 91, 91, 0.5);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    padding-left: 50px; 
+    font-size: 20px;
+    font-family: serif;
+}
+.projects:hover{ transform: scale(1.1);}
+.contact{
+    width: 900px;
+    height: 150px;
+    background-color: rgba(92, 91, 91, 0.5);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    padding-left: 50px; 
+    font-size: 20px;
+    font-family: serif;
+}
+.contact:hover{ transform: scale(1.1);}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.container {
+    animation: slideIn 1s ease;
+}
+li{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+
+
