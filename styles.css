@@ -189,6 +189,19 @@ h2, h1, h3{
 .skills:hover{
     transform: scale(1.1);
 }
+.tools{
+    width: 900px;
+    height: 80px;
+    background-color: rgba(92, 91, 91, 0.5);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    padding-left: 50px; 
+    font-size: 25px;
+    font-family: serif;
+}
+.tools:hover{
+    transform: scale(1.1);
+}
 
 .projects{
     width: 900px;
@@ -212,6 +225,7 @@ h2, h1, h3{
     font-family: serif;
 }
 .contact:hover{ transform: scale(1.1);}
+
 
 @keyframes slideIn {
     0% {
